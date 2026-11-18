@@ -85,7 +85,7 @@ runtime:
   mode: integrated
 
 image:
-  repository: ghcr.io/opsknight-labs/opsknight
+  repository: ghcr.io/opsknightlabs/opsknight
   digest: sha256:<tested-2.0.0-manifest-digest>
   pullPolicy: IfNotPresent
 

@@ -37,37 +37,37 @@ export const BRAND = {
   statusMessage: `v${PRODUCT_VERSION} stable`,
 
   links: {
-    github: "https://github.com/opsknight-labs/OpsKnight",
+    github: "https://github.com/OpsKnightLabs/OpsKnight",
     sponsor: "https://github.com/sponsors/dushyant-rahangdale",
     docs: latestDocsHref(),
     email: "help@opsknight.com",
     status: "https://status.opsknight.com",
-    issues: "https://github.com/opsknight-labs/OpsKnight/issues",
-    discussions: "https://github.com/opsknight-labs/OpsKnight/discussions",
-    releases: "https://github.com/opsknight-labs/OpsKnight/releases",
+    issues: "https://github.com/OpsKnightLabs/OpsKnight/issues",
+    discussions: "https://github.com/OpsKnightLabs/OpsKnight/discussions",
+    releases: "https://github.com/OpsKnightLabs/OpsKnight/releases",
     contributing:
-      "https://github.com/opsknight-labs/OpsKnight/blob/main/CONTRIBUTING.md",
+      "https://github.com/OpsKnightLabs/OpsKnight/blob/main/CONTRIBUTING.md",
     // v2.0.0 stable release license.
-    license: `https://github.com/opsknight-labs/OpsKnight/blob/${PRODUCT.release.tag}/LICENSE`,
+    license: `https://github.com/OpsKnightLabs/OpsKnight/blob/${PRODUCT.release.tag}/LICENSE`,
     // Backward-compatible alias for pages that still use the development key.
     developmentLicense:
-      "https://github.com/opsknight-labs/OpsKnight/blob/main/LICENSE",
+      "https://github.com/OpsKnightLabs/OpsKnight/blob/main/LICENSE",
     // Historical v1.4 release license (Apache-2.0); do not use for current product marketing.
     legacyLicense:
-      "https://github.com/opsknight-labs/OpsKnight/blob/v1.4.0/LICENSE",
+      "https://github.com/OpsKnightLabs/OpsKnight/blob/v1.4.0/LICENSE",
     licenseTransition:
-      "https://github.com/opsknight-labs/OpsKnight/blob/main/LICENSE-TRANSITION.md",
+      "https://github.com/OpsKnightLabs/OpsKnight/blob/main/LICENSE-TRANSITION.md",
     trademarks:
-      "https://github.com/opsknight-labs/OpsKnight/blob/main/TRADEMARKS.md",
-    security: "https://github.com/opsknight-labs/OpsKnight/security",
-    securityPolicy: `https://github.com/opsknight-labs/OpsKnight/blob/${PRODUCT.release.tag}/SECURITY.md`,
-    vulnerabilityResponse: `https://github.com/opsknight-labs/OpsKnight/blob/${PRODUCT.release.tag}/docs/security/vulnerability-response.md`,
-    sbom: `https://github.com/opsknight-labs/OpsKnight/blob/${PRODUCT.release.tag}/docs/security/sbom.md`,
-    supportedVersions: `https://github.com/opsknight-labs/OpsKnight/blob/${PRODUCT.release.tag}/docs/security/supported-versions.md`,
-    sharedResponsibility: `https://github.com/opsknight-labs/OpsKnight/blob/${PRODUCT.release.tag}/docs/compliance/shared-responsibility.md`,
+      "https://github.com/OpsKnightLabs/OpsKnight/blob/main/TRADEMARKS.md",
+    security: "https://github.com/OpsKnightLabs/OpsKnight/security",
+    securityPolicy: `https://github.com/OpsKnightLabs/OpsKnight/blob/${PRODUCT.release.tag}/SECURITY.md`,
+    vulnerabilityResponse: `https://github.com/OpsKnightLabs/OpsKnight/blob/${PRODUCT.release.tag}/docs/security/vulnerability-response.md`,
+    sbom: `https://github.com/OpsKnightLabs/OpsKnight/blob/${PRODUCT.release.tag}/docs/security/sbom.md`,
+    supportedVersions: `https://github.com/OpsKnightLabs/OpsKnight/blob/${PRODUCT.release.tag}/docs/security/supported-versions.md`,
+    sharedResponsibility: `https://github.com/OpsKnightLabs/OpsKnight/blob/${PRODUCT.release.tag}/docs/compliance/shared-responsibility.md`,
     privateSecurityReport:
-      "https://github.com/opsknight-labs/OpsKnight/security/advisories/new",
-    helmCharts: "https://github.com/opsknight-labs/helm-charts",
+      "https://github.com/OpsKnightLabs/OpsKnight/security/advisories/new",
+    helmCharts: "https://github.com/OpsKnightLabs/helm-charts",
   },
 
   assets: {
@@ -112,7 +112,7 @@ export const BRAND = {
   deploy: {
     secretsNote:
       "OpsKnight requires PostgreSQL 14+, NEXTAUTH_SECRET, ENCRYPTION_KEY, and API_KEY_SECRET. The bundled Docker Compose starts both PostgreSQL and OpsKnight automatically. For split runtime, PgBouncer pooling, or Swarm HA, see the deployment docs.",
-    compose: `git clone https://github.com/opsknight-labs/OpsKnight.git
+    compose: `git clone https://github.com/OpsKnightLabs/OpsKnight.git
 cd OpsKnight
 cp env.example .env
 # Set NEXTAUTH_SECRET, ENCRYPTION_KEY, and API_KEY_SECRET in .env
@@ -134,7 +134,7 @@ docker run -d --name opsknight-app -p 3000:3000 \\
   -e ENCRYPTION_KEY="$(openssl rand -hex 32)" \\
   -e API_KEY_SECRET="$(openssl rand -base64 32)" \\
   --link opsknight-db \\
-  ghcr.io/opsknight-labs/opsknight:${PRODUCT_VERSION}`,
+  ghcr.io/opsknightlabs/opsknight:${PRODUCT_VERSION}`,
     helm: `# 1. Create namespace & production secrets
 kubectl create namespace opsknight
 kubectl -n opsknight create secret generic opsknight-secrets \\
@@ -156,18 +156,18 @@ kubectl -n opsknight wait --for=condition=complete job/opsknight-migration --tim
 
 # 2. Deploy integrated profile (or profiles/split-pgbouncer)
 kubectl apply -k deploy/kubernetes/kustomize/profiles/integrated/`,
-    swarm: `git clone https://github.com/opsknight-labs/OpsKnight.git
+    swarm: `git clone https://github.com/OpsKnightLabs/OpsKnight.git
 cd OpsKnight/deploy/swarm
 # Initialize Docker Swarm (if not already active)
 docker swarm init
 # Deploy multi-node HA cluster with automatic Raft secrets & validation
-export OPSKNIGHT_IMAGE="ghcr.io/opsknight-labs/opsknight:${PRODUCT_VERSION}"
+export OPSKNIGHT_IMAGE="ghcr.io/opsknightlabs/opsknight:${PRODUCT_VERSION}"
 ./scripts/deploy.sh`,
-    split: `git clone https://github.com/opsknight-labs/OpsKnight.git
+    split: `git clone https://github.com/OpsKnightLabs/OpsKnight.git
 cd OpsKnight
 cp env.example .env
 # Set NEXTAUTH_SECRET, ENCRYPTION_KEY, and API_KEY_SECRET in .env
-export OPSKNIGHT_IMAGE="ghcr.io/opsknight-labs/opsknight:${PRODUCT_VERSION}"
+export OPSKNIGHT_IMAGE="ghcr.io/opsknightlabs/opsknight:${PRODUCT_VERSION}"
 
 # Deploy 6 dedicated split roles + migration runner
 docker compose \\

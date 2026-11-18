@@ -100,7 +100,7 @@ Adjust the Job name if `nameOverride` or `fullnameOverride` is set. Continue onl
 The repository provides a standalone migration service runner:
 
 ```bash
-OPSKNIGHT_IMAGE="ghcr.io/opsknight-labs/opsknight@sha256:<digest>" \
+OPSKNIGHT_IMAGE="ghcr.io/opsknightlabs/opsknight@sha256:<digest>" \
 SWARM_STACK_NAME=opsknight \
 deploy/swarm/scripts/migrate.sh
 ```

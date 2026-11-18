@@ -30,7 +30,7 @@ The fastest way to run OpsKnight locally or in a small environment.
 ### Step 1: Clone and Configure
 
 ```bash
-git clone https://github.com/opsknight-labs/opsknight.git
+git clone https://github.com/OpsKnightLabs/opsknight.git
 cd opsknight
 cp env.example .env
 ```

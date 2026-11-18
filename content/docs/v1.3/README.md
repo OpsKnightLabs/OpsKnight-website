@@ -107,8 +107,8 @@ Production Docker images are published publicly to GitHub Container Registry (GH
 
 ```bash
 # Pin production v1.3.0 release
-docker pull ghcr.io/opsknight-labs/opsknight:1.3.0
+docker pull ghcr.io/opsknightlabs/opsknight:1.3.0
 
 # Track latest stable release
-docker pull ghcr.io/opsknight-labs/opsknight:latest
+docker pull ghcr.io/opsknightlabs/opsknight:latest
 ```

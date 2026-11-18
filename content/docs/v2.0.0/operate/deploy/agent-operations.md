@@ -65,7 +65,7 @@ Restart the Agent after changing policy. Verify that the policy hash changes in 
 
 ```sh
 export OPSKNIGHT_AGENT_ENROLLMENT_TOKEN='<single-use-token>'
-export OPSKNIGHT_AGENT_IMAGE='ghcr.io/opsknight-labs/opsknight-agent:2.0.0'
+export OPSKNIGHT_AGENT_IMAGE='ghcr.io/opsknightlabs/opsknight-agent:2.0.0'
 docker compose -f deploy/compose/docker-compose.yml \
   -f deploy/compose/docker-compose.agent.yml up -d opsknight-agent
 ```
@@ -108,7 +108,7 @@ Create an external Raft secret and deploy the Agent overlay with the selected in
 ```sh
 printf '%s' '<single-use-token>' | docker secret create opsknight_agent_enrollment_token -
 export OPSKNIGHT_EXECUTION_PUBLIC_KEY='<public-key-from-Agents-page>'
-export OPSKNIGHT_AGENT_IMAGE='ghcr.io/opsknight-labs/opsknight-agent:2.0.0'
+export OPSKNIGHT_AGENT_IMAGE='ghcr.io/opsknightlabs/opsknight-agent:2.0.0'
 docker stack deploy --with-registry-auth \
   -c deploy/swarm/docker-stack.yml \
   -c deploy/swarm/docker-stack.agent.yml opsknight

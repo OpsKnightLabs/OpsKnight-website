@@ -155,11 +155,11 @@ export default function DeployPage() {
                 <code> ENCRYPTION_KEY</code>. Other provider or API secrets are
                 conditional on the features you enable.
               </p>
-              <pre tabIndex={0}><code>{`git clone https://github.com/opsknight-labs/opsknight.git
+              <pre tabIndex={0}><code>{`git clone https://github.com/OpsKnightLabs/opsknight.git
 cd opsknight && cp env.example .env
 
 # Configure environment variables in .env:
-OPSKNIGHT_IMAGE=ghcr.io/opsknight-labs/opsknight:${PRODUCT.release.version}
+OPSKNIGHT_IMAGE=ghcr.io/opsknightlabs/opsknight:${PRODUCT.release.version}
 POSTGRES_PASSWORD=<unique-password>
 NEXTAUTH_URL=http://localhost:3000
 NEXT_PUBLIC_APP_URL=http://localhost:3000
@@ -335,7 +335,7 @@ docker compose -f deploy/compose/docker-compose.yml exec -T opsknight-app \\
                 <code> docker stack deploy</code> bypasses those gates.
               </p>
               <pre tabIndex={0}><code>{`# Split mode (default; requires explicit release image)
-export OPSKNIGHT_IMAGE="ghcr.io/opsknight-labs/opsknight:2.1.0"
+export OPSKNIGHT_IMAGE="ghcr.io/opsknightlabs/opsknight:2.1.0"
 ./deploy/swarm/scripts/deploy.sh
 
 # Integrated mode (defaults to 2.1.0 image)

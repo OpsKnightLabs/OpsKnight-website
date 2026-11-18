@@ -28,7 +28,7 @@ Example using managed PostgreSQL:
 
 ```yaml
 image:
-  repository: ghcr.io/opsknight-labs/opsknight
+  repository: ghcr.io/opsknightlabs/opsknight
   tag: '1.4.0-hotfix' # patched v1.4 runtime; pin the release or digest you tested
   # digest: 'sha256:...' # optional; takes precedence over tag
 

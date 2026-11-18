@@ -51,7 +51,7 @@ chmod 600 .env
 Set explicit production values:
 
 ```dotenv
-OPSKNIGHT_IMAGE=ghcr.io/opsknight-labs/opsknight@sha256:<tested-release-digest>
+OPSKNIGHT_IMAGE=ghcr.io/opsknightlabs/opsknight@sha256:<tested-release-digest>
 OPSKNIGHT_PULL_POLICY=always
 
 NEXTAUTH_URL=https://opsknight.example.com

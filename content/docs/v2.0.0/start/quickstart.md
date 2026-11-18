@@ -27,7 +27,7 @@ Install Git, Docker Engine, and Docker Compose v2. Ports `3000` and `5432` must 
 ## 1. Prepare the configuration
 
 ```sh
-git clone https://github.com/opsknight-labs/opsknight.git
+git clone https://github.com/OpsKnightLabs/opsknight.git
 cd opsknight
 cp env.example .env
 ```
@@ -35,7 +35,7 @@ cp env.example .env
 Edit `.env` and set at least:
 
 ```dotenv
-OPSKNIGHT_IMAGE=ghcr.io/opsknight-labs/opsknight:2.0.0
+OPSKNIGHT_IMAGE=ghcr.io/opsknightlabs/opsknight:2.0.0
 POSTGRES_PASSWORD=<unique-database-password>
 NEXTAUTH_URL=http://localhost:3000
 NEXT_PUBLIC_APP_URL=http://localhost:3000

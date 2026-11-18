@@ -65,7 +65,7 @@ See the [Configuration reference](../getting-started/configuration) for advanced
 
 ## Published image compatibility
 
-Stable images are published only at `ghcr.io/opsknight-labs/opsknight`; main-branch validation images use `ghcr.io/opsknight-labs/opsknight-test`. Do not substitute the test channel in production.
+Stable images are published only at `ghcr.io/opsknightlabs/opsknight`; main-branch validation images use `ghcr.io/opsknightlabs/opsknight-test`. Do not substitute the test channel in production.
 
 Source changes do not modify an image that was already published. The `1.4.0` stable image includes the fail-closed migration entrypoint and is built for amd64 and arm64, while the continuously updated test image from `main` is amd64-only to keep feedback fast. Inspect the selected image manifest and release notes rather than inferring capabilities from the checked-in deployment YAML.
 

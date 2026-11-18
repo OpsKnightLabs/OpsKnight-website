@@ -66,7 +66,7 @@ Prepare the following before the maintenance window:
 - Three managers for manager-quorum tolerance and enough workers to satisfy the
   selected replicas after one worker is drained.
 - A digest-pinned OpsKnight image, for example
-  `ghcr.io/opsknight-labs/opsknight@sha256:<tested-digest>`.
+  `ghcr.io/opsknightlabs/opsknight@sha256:<tested-digest>`.
 - External PostgreSQL for production, with TLS, backups, tested restore, and a
   connection limit that covers all direct and pooled clients.
 - DNS and a TLS-terminating reverse proxy or load balancer. Only port 3000 is
@@ -122,7 +122,7 @@ Run deployments from a manager in a protected administrative session. Export
 values through your CI secret store or shell without committing them:
 
 ```bash
-export OPSKNIGHT_IMAGE='ghcr.io/opsknight-labs/opsknight@sha256:<tested-digest>'
+export OPSKNIGHT_IMAGE='ghcr.io/opsknightlabs/opsknight@sha256:<tested-digest>'
 export NEXTAUTH_URL='https://opsknight.example.com'
 export NEXT_PUBLIC_APP_URL='https://opsknight.example.com'
 export NEXTAUTH_SECRET='<high-entropy-random-value>'

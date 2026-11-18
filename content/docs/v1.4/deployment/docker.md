@@ -18,7 +18,7 @@ The repository Compose file runs the published OpsKnight image and PostgreSQL 15
 ## Configure production values
 
 ```bash
-git clone https://github.com/opsknight-labs/OpsKnight.git
+git clone https://github.com/OpsKnightLabs/OpsKnight.git
 cd OpsKnight
 cp env.example .env
 openssl rand -base64 32
@@ -36,7 +36,7 @@ NEXT_PUBLIC_APP_URL=https://ops.example.com
 NEXTAUTH_SECRET=REPLACE_WITH_BASE64_OUTPUT
 ENCRYPTION_KEY=REPLACE_WITH_64_HEX_CHARACTERS
 APP_PORT=3000
-OPSKNIGHT_IMAGE=ghcr.io/opsknight-labs/opsknight:1.4.0-hotfix
+OPSKNIGHT_IMAGE=ghcr.io/opsknightlabs/opsknight:1.4.0-hotfix
 ```
 
 Pin `OPSKNIGHT_IMAGE` to the immutable version or digest you tested. The v1.4 hotfix image includes the Prisma/PostgreSQL advisory-lock fix, fail-closed migrations, and AMD64/ARM64 support. Do not use `latest` for affected v1.4 deployments.

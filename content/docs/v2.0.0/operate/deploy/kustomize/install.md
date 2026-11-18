@@ -47,8 +47,8 @@ patches:
   - path: ingress-patch.yaml
   - path: deployment-patch.yaml
 images:
-  - name: ghcr.io/opsknight-labs/opsknight
-    newName: ghcr.io/opsknight-labs/opsknight
+  - name: ghcr.io/opsknightlabs/opsknight
+    newName: ghcr.io/opsknightlabs/opsknight
     digest: sha256:<tested-opsknight-image-digest>
 ```
 
@@ -172,7 +172,7 @@ spec:
         seccompProfile: { type: RuntimeDefault }
       containers:
         - name: migrate
-          image: ghcr.io/opsknight-labs/opsknight@sha256:<tested-opsknight-image-digest>
+          image: ghcr.io/opsknightlabs/opsknight@sha256:<tested-opsknight-image-digest>
           imagePullPolicy: IfNotPresent
           securityContext:
             allowPrivilegeEscalation: false

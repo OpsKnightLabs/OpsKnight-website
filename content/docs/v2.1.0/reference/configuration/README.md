@@ -923,7 +923,7 @@ Sets the polling interval while the general queue is idle.
 - Apply behavior: restart required
 - Deprecated: no
 - Extraction confidence: derived
-- Static default: `ghcr.io/opsknight-labs/opsknight:2.1.1`, `opsknight-local:test`
+- Static default: `ghcr.io/opsknightlabs/opsknight:2.1.1`, `opsknight-local:test`
 - Sources: `deploy/compose/docker-compose.split.yml`, `deploy/compose/docker-compose.yml`, `deploy/swarm/docker-stack.integrated.yml`, `deploy/swarm/docker-stack.yml`, `env.example`, `scripts/soak-test-2h.sh`
 
 ## `OPSKNIGHT_MIGRATION_ONLY`
@@ -979,7 +979,7 @@ Sets the polling interval while the general queue is idle.
 - Apply behavior: restart required
 - Deprecated: no
 - Extraction confidence: derived
-- Static default: `ghcr.io/opsknight-labs/opsknight-pgbouncer:1.26.0`
+- Static default: `ghcr.io/opsknightlabs/opsknight-pgbouncer:1.26.0`
 - Sources: `deploy/swarm/docker-stack.pgbouncer.yml`
 
 ## `OPSKNIGHT_PGBOUNCER_USERLIST_SECRET`

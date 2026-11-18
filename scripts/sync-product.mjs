@@ -36,7 +36,7 @@ fs.writeFileSync(
   "content/product/source/provenance.json",
   JSON.stringify(
     {
-      repository: "https://github.com/opsknight-labs/OpsKnight",
+      repository: "https://github.com/OpsKnightLabs/OpsKnight",
       tag,
       commit,
       sha256,

@@ -437,4 +437,4 @@ Verify by computing HMAC of the raw request body using your webhook secret.
 - Check the [CLI Tool](./cli) for command-line access
 - See [Events API](./events) for alert integration
 - See [Incidents API](./incidents) for incident management
-- Report issues on [GitHub](https://github.com/opsknight-labs/opsknight/issues)
+- Report issues on [GitHub](https://github.com/OpsKnightLabs/opsknight/issues)
