@@ -46,7 +46,7 @@ export const releases: ReleaseItem[] = [
     }).format(new Date(PRODUCT.release.date + "T00:00:00Z")),
     summary:
       "OpsKnight 2.1.0 introduces automated runbook execution (Beta) with sandboxed agent pools, Service Automation (Beta), REST API v2, enterprise OIDC single sign-on (compatible with Microsoft Entra ID, Okta, Google Workspace, and Keycloak), SCIM 2.0 directory sync, and verified PostgreSQL 16 disaster recovery.",
-    dockerTag: `ghcr.io/opsknight-labs/opsknight:${PRODUCT.release.version}`,
+    dockerTag: `ghcr.io/opsknightlabs/opsknight:${PRODUCT.release.version}`,
     githubReleaseUrl: `${BRAND.links.releases}/tag/${PRODUCT.release.tag}`,
     categories: [
       {
@@ -100,7 +100,7 @@ export const releases: ReleaseItem[] = [
     date: "October 3, 2026",
     summary:
       "A major milestone release introducing split production runtimes, Microsoft Teams ChatOps, Twilio voice paging, incident response policy engine, SCIM 2.0 provisioning, Docker Swarm HA, ManageEngine ingestion, and a durable notification delivery control plane.",
-    dockerTag: "ghcr.io/opsknight-labs/opsknight:2.0.0",
+    dockerTag: "ghcr.io/opsknightlabs/opsknight:2.0.0",
     githubReleaseUrl: `${BRAND.links.releases}/tag/v2.0.0`,
     categories: [
       {
@@ -171,9 +171,9 @@ export const releases: ReleaseItem[] = [
     date: "August 23, 2026",
     summary:
       "A safer release foundation with reliable delayed paging, an administrator Health Center, hardened upgrades, complete versioned docs, and multi-architecture stable images.",
-    dockerTag: "ghcr.io/opsknight-labs/opsknight:1.4.0",
+    dockerTag: "ghcr.io/opsknightlabs/opsknight:1.4.0",
     githubReleaseUrl:
-      "https://github.com/opsknight-labs/OpsKnight/releases/tag/v1.4.0",
+      "https://github.com/OpsKnightLabs/OpsKnight/releases/tag/v1.4.0",
     categories: [
       {
         type: "fixed",
@@ -210,9 +210,9 @@ export const releases: ReleaseItem[] = [
     date: "August 18, 2026",
     summary:
       "Six more inbound alert sources, signed webhooks, and the official GHCR image — so you can pull a tagged build instead of assembling from source.",
-    dockerTag: "ghcr.io/opsknight-labs/opsknight:1.3.1",
+    dockerTag: "ghcr.io/opsknightlabs/opsknight:1.3.1",
     githubReleaseUrl:
-      "https://github.com/opsknight-labs/OpsKnight/releases/tag/v1.3.1",
+      "https://github.com/OpsKnightLabs/OpsKnight/releases/tag/v1.3.1",
     categories: [
       {
         type: "added",
@@ -239,7 +239,7 @@ export const releases: ReleaseItem[] = [
         type: "added",
         title: "Run it from a tagged image",
         items: [
-          "Public image at ghcr.io/opsknight-labs/opsknight:1.3.1 (linux/amd64).",
+          "Public image at ghcr.io/opsknightlabs/opsknight:1.3.1 (linux/amd64).",
         ],
       },
     ],
@@ -250,9 +250,9 @@ export const releases: ReleaseItem[] = [
     date: "August 16, 2026",
     summary:
       "When an incident is serious, OpsKnight can open a Slack room, invite who is on call, and drop a video link. A Node 20 clock bug that paged the whole roster is fixed.",
-    dockerTag: "ghcr.io/opsknight-labs/opsknight:1.2.0",
+    dockerTag: "ghcr.io/opsknightlabs/opsknight:1.2.0",
     githubReleaseUrl:
-      "https://github.com/opsknight-labs/OpsKnight/releases/tag/v1.2.0",
+      "https://github.com/OpsKnightLabs/OpsKnight/releases/tag/v1.2.0",
     categories: [
       {
         type: "added",
@@ -282,9 +282,9 @@ export const releases: ReleaseItem[] = [
     date: "April 4, 2026",
     summary:
       "On-call layers, overrides, and a master encryption key you set in the environment — so secrets are not stuck in an old local key.",
-    dockerTag: "ghcr.io/opsknight-labs/opsknight:1.1.0",
+    dockerTag: "ghcr.io/opsknightlabs/opsknight:1.1.0",
     githubReleaseUrl:
-      "https://github.com/opsknight-labs/OpsKnight/releases/tag/v1.1.0",
+      "https://github.com/OpsKnightLabs/OpsKnight/releases/tag/v1.1.0",
     categories: [
       {
         type: "added",
@@ -309,9 +309,9 @@ export const releases: ReleaseItem[] = [
     date: "February 1, 2026",
     summary:
       "First public release: incidents, on-call, paging, status pages, postmortems, and analytics — Apache-2.0, you run it.",
-    dockerTag: "ghcr.io/opsknight-labs/opsknight:1.0.0",
+    dockerTag: "ghcr.io/opsknightlabs/opsknight:1.0.0",
     githubReleaseUrl:
-      "https://github.com/opsknight-labs/OpsKnight/releases/tag/v1.0.0",
+      "https://github.com/OpsKnightLabs/OpsKnight/releases/tag/v1.0.0",
     categories: [
       {
         type: "added",

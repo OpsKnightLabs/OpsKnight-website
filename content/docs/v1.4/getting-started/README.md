@@ -21,7 +21,7 @@ Notifications (email/SMS/Slack) are optional for this path. Without a provider, 
 ## 1. Run OpsKnight (Compose)
 
 ```bash
-git clone https://github.com/opsknight-labs/OpsKnight.git
+git clone https://github.com/OpsKnightLabs/OpsKnight.git
 cd OpsKnight
 cp env.example .env
 ```

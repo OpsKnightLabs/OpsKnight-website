@@ -98,7 +98,7 @@ NetworkPolicy must allow egress to the database address and port. The checked-in
 Replace every compatibility or placeholder image with the same tested digest:
 
 ```text
-ghcr.io/opsknight-labs/opsknight@sha256:<tested-release-digest>
+ghcr.io/opsknightlabs/opsknight@sha256:<tested-release-digest>
 ```
 
 Do not use `latest`. Confirm the rendered manifests before applying:

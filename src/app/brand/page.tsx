@@ -151,7 +151,7 @@ export default function Brand() {
 
 **OpsKnight** — self-hosted incident management and on-call.
 
-[Install](https://opsknight.com/deploy/) · [Docs](https://opsknight.com/docs/) · [GitHub](https://github.com/opsknight-labs/OpsKnight)`}</code></pre>
+[Install](https://opsknight.com/deploy/) · [Docs](https://opsknight.com/docs/) · [GitHub](https://github.com/OpsKnightLabs/OpsKnight)`}</code></pre>
             </article>
             <article>
               <span>INTEGRATION ATTRIBUTION</span>

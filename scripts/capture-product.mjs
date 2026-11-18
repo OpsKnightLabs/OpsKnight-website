@@ -28,7 +28,7 @@ const provenance = {
   source: "Isolated Docker Compose marketing demo, actual v2.0.0 release",
   capturedAt: new Date().toISOString(),
   runtimeImage:
-    "ghcr.io/opsknight-labs/opsknight@sha256:099023cbd024fac4c53435aaf2bff669f0e8bf04ba96564d3a3d62d6bdfe0d62",
+    "ghcr.io/opsknightlabs/opsknight@sha256:099023cbd024fac4c53435aaf2bff669f0e8bf04ba96564d3a3d62d6bdfe0d62",
   runtimeRevision: JSON.parse(
     execFileSync("docker", ["inspect", "opsknight-website-demo-app-1"], {
       encoding: "utf8",

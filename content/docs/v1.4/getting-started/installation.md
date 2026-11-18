@@ -26,7 +26,7 @@ All methods require PostgreSQL. The published Compose and Kubernetes examples us
 ### 1. Prepare the repository and secrets
 
 ```bash
-git clone https://github.com/opsknight-labs/OpsKnight.git
+git clone https://github.com/OpsKnightLabs/OpsKnight.git
 cd OpsKnight
 cp env.example .env
 openssl rand -base64 32
@@ -106,7 +106,7 @@ Use this path for contribution and development. It is not a substitute for the t
 ### Set up the application
 
 ```bash
-git clone https://github.com/opsknight-labs/OpsKnight.git
+git clone https://github.com/OpsKnightLabs/OpsKnight.git
 cd OpsKnight
 npm ci
 cp env.example .env

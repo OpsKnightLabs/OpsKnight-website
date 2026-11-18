@@ -124,7 +124,7 @@ Fastest way to get started:
 
 ```bash
 # Clone repository
-git clone https://github.com/opsknight-labs/opsknight.git
+git clone https://github.com/OpsKnightLabs/opsknight.git
 cd opsknight
 
 # Configure environment
@@ -147,7 +147,7 @@ Using raw manifests:
 
 ```bash
 # Clone repository
-git clone https://github.com/opsknight-labs/opsknight.git
+git clone https://github.com/OpsKnightLabs/opsknight.git
 cd opsknight/k8s
 
 # Create namespace
@@ -288,7 +288,7 @@ docker exec -it opsknight_app npx prisma migrate deploy
 ```bash
 # Update image tag in deployment
 kubectl set image deployment/opsknight \
-  opsknight=ghcr.io/opsknight-labs/opsknight:1.0.0 \
+  opsknight=ghcr.io/opsknightlabs/opsknight:1.0.0 \
   -n opsknight
 
 # Or apply updated manifests

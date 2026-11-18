@@ -44,7 +44,7 @@ runtime:
 replicaCount: 2
 
 image:
-  repository: ghcr.io/opsknight-labs/opsknight
+  repository: ghcr.io/opsknightlabs/opsknight
   tag: ""
   digest: "sha256:<tested-opsknight-image-digest>"
   pullPolicy: IfNotPresent

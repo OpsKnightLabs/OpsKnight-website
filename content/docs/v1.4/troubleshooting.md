@@ -259,7 +259,7 @@ Do not rotate upstream credentials only in OpsKnight after suspected exposure; r
 
 ## Ask for help
 
-Search [GitHub issues](https://github.com/opsknight-labs/OpsKnight/issues) and [discussions](https://github.com/opsknight-labs/OpsKnight/discussions). A useful report includes:
+Search [GitHub issues](https://github.com/OpsKnightLabs/OpsKnight/issues) and [discussions](https://github.com/OpsKnightLabs/OpsKnight/discussions). A useful report includes:
 
 - OpsKnight version/image digest and deployment method;
 - browser, Node.js (source builds), PostgreSQL, and relevant platform versions;

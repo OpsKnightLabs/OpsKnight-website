@@ -16,7 +16,7 @@ Use the Helm chart to install OpsKnight on Kubernetes with repeatable, versioned
 ## Quick Start
 
 ```bash
-git clone https://github.com/opsknight-labs/opsknight.git
+git clone https://github.com/OpsKnightLabs/opsknight.git
 cd opsknight
 
 helm install opsknight ./helm/opsknight \

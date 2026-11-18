@@ -51,7 +51,7 @@ resources:
 components:
   - ../../components/openshift # Include only for the OpenShift application profile.
 images:
-  - name: ghcr.io/opsknight-labs/opsknight
+  - name: ghcr.io/opsknightlabs/opsknight
     digest: sha256:<tested-image-digest>
 ```
 
@@ -86,7 +86,7 @@ components:
   - ../../components/secrets-store-csi
   - ../../components/openshift # Include when using the OpenShift application profile.
 images:
-  - name: ghcr.io/opsknight-labs/opsknight
+  - name: ghcr.io/opsknightlabs/opsknight
     digest: sha256:<same-tested-image-digest>
 ```
 

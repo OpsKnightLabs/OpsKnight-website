@@ -146,7 +146,7 @@ Render the selected overlay, review immutable image and Secret references, and a
 Set the target digest and use the repository orchestrator:
 
 ```bash
-OPSKNIGHT_IMAGE='ghcr.io/opsknight-labs/opsknight@sha256:<digest>' \
+OPSKNIGHT_IMAGE='ghcr.io/opsknightlabs/opsknight@sha256:<digest>' \
   ./deploy/swarm/scripts/deploy.sh
 ```
 

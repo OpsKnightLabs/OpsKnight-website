@@ -76,8 +76,8 @@ resources:
   - ../../../deploy/kubernetes/kustomize/profiles/split
 
 images:
-  - name: ghcr.io/opsknight-labs/opsknight
-    newName: ghcr.io/opsknight-labs/opsknight
+  - name: ghcr.io/opsknightlabs/opsknight
+    newName: ghcr.io/opsknightlabs/opsknight
     digest: sha256:<tested-2.0.0-manifest-digest>
 
 patches:

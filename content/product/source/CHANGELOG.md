@@ -137,7 +137,7 @@ Read [Migrate from v1](docs/v2.0.0/start/migrate-from-v1.md), [database migratio
 - **Deployment Reliability**: Added fail-closed migration startup with bounded recovery and multi-architecture stable container publishing; retained fast AMD64-only builds for the continuously updated test image.
 - **Modern In-Process Avatar Ecosystem**: Migrated to local in-process `@dicebear/core` and `@dicebear/collection` rendering (eliminating external HTTP calls to `api.dicebear.com`); added professional vector styles (`bottts`, `shapes`, `initials`, `pixel-art`, `avataaars`, `lorelei`, `micah`, `identicon`) with gender-based selection, SVG XML entity sanitization, and strict CSP headers.
 - **Admin-Controlled OIDC Account Linking**: Added explicit, reversible admin controls in user management to approve or revoke OIDC account linking, preventing account takeovers while allowing secure initial sign-in for invited team members.
-- **Comprehensive Documentation & Operations Runbooks**: Published complete v1.3 capability inventory (`docs/V1_3_CAPABILITY_INVENTORY.md`), 15-minute golden path getting-started guide, production deployment runbooks for Docker, Kubernetes & Helm, database backup & disaster recovery procedures, and updated container registries to `ghcr.io/opsknight-labs/opsknight`.
+- **Comprehensive Documentation & Operations Runbooks**: Published complete v1.3 capability inventory (`docs/V1_3_CAPABILITY_INVENTORY.md`), 15-minute golden path getting-started guide, production deployment runbooks for Docker, Kubernetes & Helm, database backup & disaster recovery procedures, and updated container registries to `ghcr.io/opsknightlabs/opsknight`.
 
 ### Security & Hardening
 
@@ -195,7 +195,7 @@ Read [Migrate from v1](docs/v2.0.0/start/migrate-from-v1.md), [database migratio
   - Next.js navigation error propagation (`isRedirectError`, `isNotFoundError`) in server action wrappers
   - Fallback RBAC permission safely assigns unauthenticated sessions to `VIEWER` with `authenticated: false`
 - **Official Organization Migration**:
-  - Migrated repository and container packages to `ghcr.io/opsknight-labs/opsknight` with public anonymous pull support
+  - Migrated repository and container packages to `ghcr.io/opsknightlabs/opsknight` with public anonymous pull support
 
 ## [1.2.0] - 2026-08-16
 

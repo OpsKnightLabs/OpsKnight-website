@@ -32,7 +32,7 @@ const pageMetadata: Metadata = {
 export const metadata = siteMetadata(pageMetadata);
 
 // Mirrors the Quick start in the OpsKnight README.
-const QUICK_START = `git clone https://github.com/opsknight-labs/OpsKnight.git
+const QUICK_START = `git clone https://github.com/OpsKnightLabs/OpsKnight.git
 cd OpsKnight
 cp env.example .env
 
@@ -41,9 +41,9 @@ printf 'API_KEY_SECRET=%s\\n' "$(openssl rand -base64 32)" >> .env
 printf 'ENCRYPTION_KEY=%s\\n' "$(openssl rand -hex 32)" >> .env
 printf 'POSTGRES_PASSWORD=%s\\n' "$(openssl rand -base64 32)" >> .env
 
-OPSKNIGHT_IMAGE=ghcr.io/opsknight-labs/opsknight:${PRODUCT.release.version} \\
+OPSKNIGHT_IMAGE=ghcr.io/opsknightlabs/opsknight:${PRODUCT.release.version} \\
   docker compose -f deploy/compose/docker-compose.yml pull
-OPSKNIGHT_IMAGE=ghcr.io/opsknight-labs/opsknight:${PRODUCT.release.version} \\
+OPSKNIGHT_IMAGE=ghcr.io/opsknightlabs/opsknight:${PRODUCT.release.version} \\
   docker compose -f deploy/compose/docker-compose.yml up -d
 
 docker compose -f deploy/compose/docker-compose.yml exec -T opsknight-app \\
